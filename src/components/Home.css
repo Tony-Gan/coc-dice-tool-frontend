@@ -1,0 +1,51 @@
+/* src/components/Home.css */
+
+.home-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px;
+    text-align: center;
+    background-color: #1e1e2f; /* Deep dark blue background */
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    color: #e0e0e0; /* Light grey text */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    font-family: 'NotoSans', sans-serif;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.btn {
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2a2a40; /* Slightly lighter dark blue */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    max-width: 250px;
+    box-sizing: border-box;
+    font-size: 16px; /* Ensure text fits in one line */
+}
+
+.btn:hover {
+    background-color: #3d3d5c; /* Lighter on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
