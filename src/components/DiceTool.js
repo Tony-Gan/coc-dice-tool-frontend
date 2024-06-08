@@ -10,7 +10,7 @@ const DiceTool = () => {
     const [loading, setLoading] = useState(false); // 添加加载状态
 
     useEffect(() => {
-        const socket = new WebSocket(`ws://${window.location.hostname}:8000/dice/ws`);
+        const socket = new WebSocket(`ws://127.0.0.1:8000/dice/ws`);
         setWs(socket);
 
         socket.onopen = () => {
